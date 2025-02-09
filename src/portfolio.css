@@ -1,0 +1,91 @@
+.navigation-sidebar {
+    display: inline-flex;
+    flex-direction: column;
+    float: left;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+main {
+    margin: 5% 15%;
+    cursor: default;
+}
+#about-me, #education-certificates, #experience-projects, #education, #certificates {
+    transition: 0.25s;
+}
+#about-me {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+}
+#about-me img {
+    border-radius: 15%;
+    border: 1px solid;
+    width: 250px;
+    height: 250px;
+    border-radius: 15%;
+    transition: 0.25s;
+}
+#about-me img:hover {
+    transform: scale(1.10);
+}
+#about-me:hover, #education-certificates:hover {
+    padding: 2.5%;
+}
+.skills {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-size: small;
+    background-color: #F5F5F5;
+    border: 1px solid;
+    transition: 0.25s;
+}
+.skill {
+    border: 1px solid black;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    transition: 0.25s;
+}
+.skill:hover, .skills:hover {
+    transform: scale(1.05);
+}
+.skillA {width: 80%; background-color: #4CAF50;}
+.skillB {width: 60%; background-color: #2196F3;}
+.skillC {width: 100%; background-color: #FF9800;}
+.skillD {width: 100%; background-color: #F44336;}
+.skillE {width: 100%; background-color: #9C27B0;}
+
+/* owshi carousel */
+.projects-container {
+    width: 100%;
+    overflow-x: scroll;
+    white-space: nowrap;
+    height: fit-content;
+}
+.projects-container img {
+    width: 400px;
+    height: 300px;
+    aspect-ratio: 1/1;
+    margin-right: 10px;
+    display: inline;
+    transition: 0.25s;
+}
+.projects-container img:hover {
+    padding: 10px;
+}
+
+
+
+@media only screen and (max-width: 732px) {
+    #about-me {
+        display: block;
+        text-align: center;
+    }
+    #about-me:hover, #education-certificates:hover, #experience-projects:hover {
+        padding: 0;
+    }
+}

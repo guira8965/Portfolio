@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@font-face {
+    font-family: "LEMONMILK-Bold";
+    src: url(../assets/Fonts/LEMONMILK/LEMONMILK-Bold.otf);
+}
+
+body {
+    margin: 0;
+    font-family: "Open Sans";
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+header {
+    padding: 1% 0;
+    display: flex;
+    background-color: black;
+    box-shadow: #E1D8EF 0 0 1rem;
+}
+header h1, header a, header nav {
+    color: white;
+    justify-content: center;
+    transition: 0.5s;
+}
+header h1 {
+    font-family: "LEMONMILK-Bold";
+    font-size: x-large;
+}
+header a, header nav {
+    margin: auto;
+    display: flex;
+    text-decoration: none;
+}
+header a {
+    margin: auto;
+    display: flex;
+    text-decoration: none;
+    position: relative;
+    color: white;
+    font-size: 1rem;
+}
+header nav {
+    gap: 1rem;
+}
+
+header a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0%;
+    height: 1px;
+    background-color: white;
+    transition: 0.3s;
+    left: 50%;
+    transform: translateX(-50%);
+}
+header a:hover::after, .active-link::after {
+    width: 100%;
+}
+
+@media only screen and (max-width: 732px) {
+    header {
+        display: block;
+        text-align: center;
+    }
+}

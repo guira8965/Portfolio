@@ -1,0 +1,56 @@
+body {
+    background-image: url("assets/Images/wave1.png");
+}
+main {
+    display: flex;
+    justify-content: center;
+}
+.box {
+    margin-top: 5%;
+    display: flex;
+    gap: 5%;
+    background-color: rgba(255, 255, 255);
+    border: 1px solid;
+    border-radius: 2%/5%;
+    padding: 5%;
+    transition: 0.5s;
+}
+.picture {
+    margin: auto;
+    width: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: solid black 1px;
+    transition: 0.25s;
+}
+.portfolioButton {
+    background-color: white;
+    color: black;
+    padding: 5%;
+    border: solid black 1px;
+    border-radius: 5%/15%;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.picture:hover {
+    transform: scale(1.10);
+}
+.portfolioButton:hover {
+    background-color: black;
+    color: white;
+    border: solid white 1px;
+}
+@media only screen and (max-width: 732px) {
+    header, main, .box {
+        display: block;
+        text-align: center;
+    }
+    .picture {
+        margin-top: 4rem;
+    }
+    .box {
+        background-color: rgba(255, 255, 255, 0);
+        border: none;
+    }
+}
